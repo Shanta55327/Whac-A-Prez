@@ -1,0 +1,690 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		450AA65F1D5D3F67008E3F16 /* gameSceneMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 450AA65E1D5D3F67008E3F16 /* gameSceneMusic.mp3 */; };
+		451578061D369529007BDEDC /* MainMenu.sks in Resources */ = {isa = PBXBuildFile; fileRef = 451578051D369529007BDEDC /* MainMenu.sks */; };
+		451578081D369598007BDEDC /* PickPres.sks in Resources */ = {isa = PBXBuildFile; fileRef = 451578071D369598007BDEDC /* PickPres.sks */; };
+		4516CD6E1D56DDAA000E0607 /* Instructions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4516CD6D1D56DDAA000E0607 /* Instructions.sks */; };
+		452355391D36B081009EF8DF /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 452355381D36B080009EF8DF /* Actions.sks */; };
+		452355471D36B5C3009EF8DF /* CGFloat+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4523553B1D36B5C3009EF8DF /* CGFloat+Extensions.swift */; };
+		452355481D36B5C3009EF8DF /* CGPoint+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4523553C1D36B5C3009EF8DF /* CGPoint+Extensions.swift */; };
+		452355491D36B5C3009EF8DF /* CGVector+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4523553D1D36B5C3009EF8DF /* CGVector+Extensions.swift */; };
+		4523554A1D36B5C3009EF8DF /* Int+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4523553E1D36B5C3009EF8DF /* Int+Extensions.swift */; };
+		4523554B1D36B5C3009EF8DF /* SKAction+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4523553F1D36B5C3009EF8DF /* SKAction+Extensions.swift */; };
+		4523554C1D36B5C3009EF8DF /* SKAction+SpecialEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452355401D36B5C3009EF8DF /* SKAction+SpecialEffects.swift */; };
+		4523554D1D36B5C3009EF8DF /* SKColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452355411D36B5C3009EF8DF /* SKColor+Extensions.swift */; };
+		4523554E1D36B5C3009EF8DF /* SKNode+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452355421D36B5C3009EF8DF /* SKNode+Extensions.swift */; };
+		4523554F1D36B5C3009EF8DF /* SKTAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452355431D36B5C3009EF8DF /* SKTAudio.swift */; };
+		452355501D36B5C3009EF8DF /* SKTEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452355441D36B5C3009EF8DF /* SKTEffects.swift */; };
+		452355511D36B5C3009EF8DF /* SKTTimingFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452355451D36B5C3009EF8DF /* SKTTimingFunctions.swift */; };
+		452355521D36B5C3009EF8DF /* Vector3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452355461D36B5C3009EF8DF /* Vector3.swift */; };
+		452355631D36B812009EF8DF /* MSButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452355541D36B812009EF8DF /* MSButtonNode.swift */; };
+		452355641D36B812009EF8DF /* MSReferenceNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452355551D36B812009EF8DF /* MSReferenceNode.swift */; };
+		45395D2B1D357AD000E079B1 /* trumpJump.sks in Resources */ = {isa = PBXBuildFile; fileRef = 45395D2A1D357AD000E079B1 /* trumpJump.sks */; };
+		453AC3AE1D5D9411001E5403 /* HelpScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 453AC3AD1D5D9411001E5403 /* HelpScene.sks */; };
+		454044211D52F5A2002005CF /* TimePowerup10.sks in Resources */ = {isa = PBXBuildFile; fileRef = 454044201D52F5A2002005CF /* TimePowerup10.sks */; };
+		4541DCBF1D354182003C9421 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4541DCBE1D354182003C9421 /* AppDelegate.swift */; };
+		4541DCC11D354182003C9421 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4541DCC01D354182003C9421 /* GameScene.sks */; };
+		4541DCC31D354182003C9421 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4541DCC21D354182003C9421 /* GameScene.swift */; };
+		4541DCC51D354182003C9421 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4541DCC41D354182003C9421 /* GameViewController.swift */; };
+		4541DCC81D354183003C9421 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4541DCC61D354183003C9421 /* Main.storyboard */; };
+		4541DCCA1D354183003C9421 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4541DCC91D354183003C9421 /* Assets.xcassets */; };
+		4541DCCD1D354183003C9421 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4541DCCB1D354183003C9421 /* LaunchScreen.storyboard */; };
+		4541DCD81D354183003C9421 /* Wack_A_PresTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4541DCD71D354183003C9421 /* Wack_A_PresTests.swift */; };
+		4541DCE31D354183003C9421 /* Wack_A_PresUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4541DCE21D354183003C9421 /* Wack_A_PresUITests.swift */; };
+		45533DD91D5B76810049DB20 /* FinalScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45533DD81D5B76810049DB20 /* FinalScene.swift */; };
+		45533DDB1D5B76CE0049DB20 /* FinalScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 45533DDA1D5B76CE0049DB20 /* FinalScene.sks */; };
+		458084321D4A5C8C00579EF7 /* OverScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 458084311D4A5C8C00579EF7 /* OverScene.sks */; };
+		4584CFC61D4681C1000D639B /* HillaryScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4584CFC51D4681C1000D639B /* HillaryScene.sks */; };
+		4589267F1D5BF45700304543 /* OverSceneHillary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4589267E1D5BF45700304543 /* OverSceneHillary.swift */; };
+		458926811D5C0BB400304543 /* slap.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 458926801D5C0BB400304543 /* slap.mp3 */; };
+		4595D42A1D53E0DF00D9F1EE /* HammerHitting.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4595D4291D53E0DF00D9F1EE /* HammerHitting.sks */; };
+		45C325351D465DB40001CDF3 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C325341D465DB40001CDF3 /* MainMenu.swift */; };
+		45C325371D46629A0001CDF3 /* PickPres.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C325361D46629A0001CDF3 /* PickPres.swift */; };
+		45DB17FC1D51321E00386B61 /* HillaryScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DB17FB1D51321E00386B61 /* HillaryScene.swift */; };
+		45DDE9721D5A623400256567 /* ReverseTimePowerup.sks in Resources */ = {isa = PBXBuildFile; fileRef = 45DDE9711D5A623400256567 /* ReverseTimePowerup.sks */; };
+		45E590361D4FC12500B4529C /* obamaJump.sks in Resources */ = {isa = PBXBuildFile; fileRef = 45E590351D4FC12500B4529C /* obamaJump.sks */; };
+		45E9F8501D4A7D3900CAA92A /* OverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E9F84F1D4A7D3900CAA92A /* OverScene.swift */; };
+		45FEA7DE1D3EA6D8004357F6 /* hillaryJump.sks in Resources */ = {isa = PBXBuildFile; fileRef = 45FEA7DD1D3EA6D7004357F6 /* hillaryJump.sks */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4541DCD41D354183003C9421 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4541DCB31D35417F003C9421 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4541DCBA1D354180003C9421;
+			remoteInfo = "Wack-A-Pres";
+		};
+		4541DCDF1D354183003C9421 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4541DCB31D35417F003C9421 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4541DCBA1D354180003C9421;
+			remoteInfo = "Wack-A-Pres";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		450AA65E1D5D3F67008E3F16 /* gameSceneMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gameSceneMusic.mp3; sourceTree = "<group>"; };
+		451578051D369529007BDEDC /* MainMenu.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MainMenu.sks; sourceTree = "<group>"; };
+		451578071D369598007BDEDC /* PickPres.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = PickPres.sks; sourceTree = "<group>"; };
+		4516CD6D1D56DDAA000E0607 /* Instructions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Instructions.sks; sourceTree = "<group>"; };
+		452355381D36B080009EF8DF /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Actions.sks; path = ../Actions.sks; sourceTree = "<group>"; };
+		4523553B1D36B5C3009EF8DF /* CGFloat+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGFloat+Extensions.swift"; sourceTree = "<group>"; };
+		4523553C1D36B5C3009EF8DF /* CGPoint+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+Extensions.swift"; sourceTree = "<group>"; };
+		4523553D1D36B5C3009EF8DF /* CGVector+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGVector+Extensions.swift"; sourceTree = "<group>"; };
+		4523553E1D36B5C3009EF8DF /* Int+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Extensions.swift"; sourceTree = "<group>"; };
+		4523553F1D36B5C3009EF8DF /* SKAction+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKAction+Extensions.swift"; sourceTree = "<group>"; };
+		452355401D36B5C3009EF8DF /* SKAction+SpecialEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKAction+SpecialEffects.swift"; sourceTree = "<group>"; };
+		452355411D36B5C3009EF8DF /* SKColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKColor+Extensions.swift"; sourceTree = "<group>"; };
+		452355421D36B5C3009EF8DF /* SKNode+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKNode+Extensions.swift"; sourceTree = "<group>"; };
+		452355431D36B5C3009EF8DF /* SKTAudio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKTAudio.swift; sourceTree = "<group>"; };
+		452355441D36B5C3009EF8DF /* SKTEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKTEffects.swift; sourceTree = "<group>"; };
+		452355451D36B5C3009EF8DF /* SKTTimingFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKTTimingFunctions.swift; sourceTree = "<group>"; };
+		452355461D36B5C3009EF8DF /* Vector3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vector3.swift; sourceTree = "<group>"; };
+		452355541D36B812009EF8DF /* MSButtonNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSButtonNode.swift; sourceTree = "<group>"; };
+		452355551D36B812009EF8DF /* MSReferenceNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSReferenceNode.swift; sourceTree = "<group>"; };
+		45395D2A1D357AD000E079B1 /* trumpJump.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = trumpJump.sks; sourceTree = "<group>"; };
+		453AC3AD1D5D9411001E5403 /* HelpScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = HelpScene.sks; sourceTree = "<group>"; };
+		454044201D52F5A2002005CF /* TimePowerup10.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = TimePowerup10.sks; sourceTree = "<group>"; };
+		4541DCBB1D354180003C9421 /* Wack-A-Pres.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wack-A-Pres.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4541DCBE1D354182003C9421 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4541DCC01D354182003C9421 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		4541DCC21D354182003C9421 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		4541DCC41D354182003C9421 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		4541DCC71D354183003C9421 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4541DCC91D354183003C9421 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4541DCCC1D354183003C9421 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4541DCCE1D354183003C9421 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4541DCD31D354183003C9421 /* Wack-A-PresTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wack-A-PresTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4541DCD71D354183003C9421 /* Wack_A_PresTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wack_A_PresTests.swift; sourceTree = "<group>"; };
+		4541DCD91D354183003C9421 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4541DCDE1D354183003C9421 /* Wack-A-PresUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wack-A-PresUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4541DCE21D354183003C9421 /* Wack_A_PresUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wack_A_PresUITests.swift; sourceTree = "<group>"; };
+		4541DCE41D354183003C9421 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45533DD81D5B76810049DB20 /* FinalScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinalScene.swift; sourceTree = "<group>"; };
+		45533DDA1D5B76CE0049DB20 /* FinalScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = FinalScene.sks; sourceTree = "<group>"; };
+		458084311D4A5C8C00579EF7 /* OverScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = OverScene.sks; sourceTree = "<group>"; };
+		4584CFC51D4681C1000D639B /* HillaryScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = HillaryScene.sks; sourceTree = "<group>"; };
+		4589267E1D5BF45700304543 /* OverSceneHillary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverSceneHillary.swift; sourceTree = "<group>"; };
+		458926801D5C0BB400304543 /* slap.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = slap.mp3; sourceTree = "<group>"; };
+		4595D4291D53E0DF00D9F1EE /* HammerHitting.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = HammerHitting.sks; sourceTree = "<group>"; };
+		45C325341D465DB40001CDF3 /* MainMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
+		45C325361D46629A0001CDF3 /* PickPres.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickPres.swift; sourceTree = "<group>"; };
+		45DB17FB1D51321E00386B61 /* HillaryScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HillaryScene.swift; path = ../HillaryScene.swift; sourceTree = "<group>"; };
+		45DDE9711D5A623400256567 /* ReverseTimePowerup.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = ReverseTimePowerup.sks; sourceTree = "<group>"; };
+		45E590351D4FC12500B4529C /* obamaJump.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = obamaJump.sks; sourceTree = "<group>"; };
+		45E9F84F1D4A7D3900CAA92A /* OverScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverScene.swift; sourceTree = "<group>"; };
+		45FEA7DD1D3EA6D7004357F6 /* hillaryJump.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = hillaryJump.sks; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4541DCB81D354180003C9421 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4541DCD01D354183003C9421 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4541DCDB1D354183003C9421 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4523553A1D36B5C3009EF8DF /* SKTUtils */ = {
+			isa = PBXGroup;
+			children = (
+				4523553B1D36B5C3009EF8DF /* CGFloat+Extensions.swift */,
+				4523553C1D36B5C3009EF8DF /* CGPoint+Extensions.swift */,
+				4523553D1D36B5C3009EF8DF /* CGVector+Extensions.swift */,
+				4523553E1D36B5C3009EF8DF /* Int+Extensions.swift */,
+				4523553F1D36B5C3009EF8DF /* SKAction+Extensions.swift */,
+				452355401D36B5C3009EF8DF /* SKAction+SpecialEffects.swift */,
+				452355411D36B5C3009EF8DF /* SKColor+Extensions.swift */,
+				452355421D36B5C3009EF8DF /* SKNode+Extensions.swift */,
+				452355431D36B5C3009EF8DF /* SKTAudio.swift */,
+				452355441D36B5C3009EF8DF /* SKTEffects.swift */,
+				452355451D36B5C3009EF8DF /* SKTTimingFunctions.swift */,
+				452355461D36B5C3009EF8DF /* Vector3.swift */,
+			);
+			path = SKTUtils;
+			sourceTree = "<group>";
+		};
+		452355531D36B811009EF8DF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				452355541D36B812009EF8DF /* MSButtonNode.swift */,
+				452355551D36B812009EF8DF /* MSReferenceNode.swift */,
+			);
+			name = Utils;
+			path = SKTUtils/Utils;
+			sourceTree = "<group>";
+		};
+		4541DCB21D35417E003C9421 = {
+			isa = PBXGroup;
+			children = (
+				4541DCBD1D354181003C9421 /* Wack-A-Pres */,
+				4541DCD61D354183003C9421 /* Wack-A-PresTests */,
+				4541DCE11D354183003C9421 /* Wack-A-PresUITests */,
+				4541DCBC1D354180003C9421 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4541DCBC1D354180003C9421 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4541DCBB1D354180003C9421 /* Wack-A-Pres.app */,
+				4541DCD31D354183003C9421 /* Wack-A-PresTests.xctest */,
+				4541DCDE1D354183003C9421 /* Wack-A-PresUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4541DCBD1D354181003C9421 /* Wack-A-Pres */ = {
+			isa = PBXGroup;
+			children = (
+				4541DCBE1D354182003C9421 /* AppDelegate.swift */,
+				4541DCC01D354182003C9421 /* GameScene.sks */,
+				4584CFC51D4681C1000D639B /* HillaryScene.sks */,
+				45FEA7DD1D3EA6D7004357F6 /* hillaryJump.sks */,
+				45395D2A1D357AD000E079B1 /* trumpJump.sks */,
+				4516CD6D1D56DDAA000E0607 /* Instructions.sks */,
+				45E590351D4FC12500B4529C /* obamaJump.sks */,
+				4595D4291D53E0DF00D9F1EE /* HammerHitting.sks */,
+				454044201D52F5A2002005CF /* TimePowerup10.sks */,
+				45DDE9711D5A623400256567 /* ReverseTimePowerup.sks */,
+				458084311D4A5C8C00579EF7 /* OverScene.sks */,
+				45533DDA1D5B76CE0049DB20 /* FinalScene.sks */,
+				452355381D36B080009EF8DF /* Actions.sks */,
+				451578051D369529007BDEDC /* MainMenu.sks */,
+				451578071D369598007BDEDC /* PickPres.sks */,
+				453AC3AD1D5D9411001E5403 /* HelpScene.sks */,
+				45E9F84F1D4A7D3900CAA92A /* OverScene.swift */,
+				4589267E1D5BF45700304543 /* OverSceneHillary.swift */,
+				4541DCC21D354182003C9421 /* GameScene.swift */,
+				45DB17FB1D51321E00386B61 /* HillaryScene.swift */,
+				45533DD81D5B76810049DB20 /* FinalScene.swift */,
+				45C325361D46629A0001CDF3 /* PickPres.swift */,
+				45C325341D465DB40001CDF3 /* MainMenu.swift */,
+				4541DCC91D354183003C9421 /* Assets.xcassets */,
+				458926801D5C0BB400304543 /* slap.mp3 */,
+				450AA65E1D5D3F67008E3F16 /* gameSceneMusic.mp3 */,
+				4541DCC41D354182003C9421 /* GameViewController.swift */,
+				4541DCC61D354183003C9421 /* Main.storyboard */,
+				4541DCCB1D354183003C9421 /* LaunchScreen.storyboard */,
+				4541DCCE1D354183003C9421 /* Info.plist */,
+				452355531D36B811009EF8DF /* Utils */,
+				4523553A1D36B5C3009EF8DF /* SKTUtils */,
+			);
+			path = "Wack-A-Pres";
+			sourceTree = "<group>";
+		};
+		4541DCD61D354183003C9421 /* Wack-A-PresTests */ = {
+			isa = PBXGroup;
+			children = (
+				4541DCD71D354183003C9421 /* Wack_A_PresTests.swift */,
+				4541DCD91D354183003C9421 /* Info.plist */,
+			);
+			path = "Wack-A-PresTests";
+			sourceTree = "<group>";
+		};
+		4541DCE11D354183003C9421 /* Wack-A-PresUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4541DCE21D354183003C9421 /* Wack_A_PresUITests.swift */,
+				4541DCE41D354183003C9421 /* Info.plist */,
+			);
+			path = "Wack-A-PresUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4541DCBA1D354180003C9421 /* Wack-A-Pres */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4541DCE71D354184003C9421 /* Build configuration list for PBXNativeTarget "Wack-A-Pres" */;
+			buildPhases = (
+				4541DCB71D354180003C9421 /* Sources */,
+				4541DCB81D354180003C9421 /* Frameworks */,
+				4541DCB91D354180003C9421 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Wack-A-Pres";
+			productName = "Wack-A-Pres";
+			productReference = 4541DCBB1D354180003C9421 /* Wack-A-Pres.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4541DCD21D354183003C9421 /* Wack-A-PresTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4541DCEA1D354184003C9421 /* Build configuration list for PBXNativeTarget "Wack-A-PresTests" */;
+			buildPhases = (
+				4541DCCF1D354183003C9421 /* Sources */,
+				4541DCD01D354183003C9421 /* Frameworks */,
+				4541DCD11D354183003C9421 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4541DCD51D354183003C9421 /* PBXTargetDependency */,
+			);
+			name = "Wack-A-PresTests";
+			productName = "Wack-A-PresTests";
+			productReference = 4541DCD31D354183003C9421 /* Wack-A-PresTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4541DCDD1D354183003C9421 /* Wack-A-PresUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4541DCED1D354184003C9421 /* Build configuration list for PBXNativeTarget "Wack-A-PresUITests" */;
+			buildPhases = (
+				4541DCDA1D354183003C9421 /* Sources */,
+				4541DCDB1D354183003C9421 /* Frameworks */,
+				4541DCDC1D354183003C9421 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4541DCE01D354183003C9421 /* PBXTargetDependency */,
+			);
+			name = "Wack-A-PresUITests";
+			productName = "Wack-A-PresUITests";
+			productReference = 4541DCDE1D354183003C9421 /* Wack-A-PresUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4541DCB31D35417F003C9421 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Make School";
+				TargetAttributes = {
+					4541DCBA1D354180003C9421 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 6UJG87J344;
+					};
+					4541DCD21D354183003C9421 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 4541DCBA1D354180003C9421;
+					};
+					4541DCDD1D354183003C9421 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 4541DCBA1D354180003C9421;
+					};
+				};
+			};
+			buildConfigurationList = 4541DCB61D35417F003C9421 /* Build configuration list for PBXProject "Wack-A-Pres" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4541DCB21D35417E003C9421;
+			productRefGroup = 4541DCBC1D354180003C9421 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4541DCBA1D354180003C9421 /* Wack-A-Pres */,
+				4541DCD21D354183003C9421 /* Wack-A-PresTests */,
+				4541DCDD1D354183003C9421 /* Wack-A-PresUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4541DCB91D354180003C9421 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45E590361D4FC12500B4529C /* obamaJump.sks in Resources */,
+				45395D2B1D357AD000E079B1 /* trumpJump.sks in Resources */,
+				458926811D5C0BB400304543 /* slap.mp3 in Resources */,
+				453AC3AE1D5D9411001E5403 /* HelpScene.sks in Resources */,
+				45DDE9721D5A623400256567 /* ReverseTimePowerup.sks in Resources */,
+				458084321D4A5C8C00579EF7 /* OverScene.sks in Resources */,
+				4516CD6E1D56DDAA000E0607 /* Instructions.sks in Resources */,
+				4584CFC61D4681C1000D639B /* HillaryScene.sks in Resources */,
+				45533DDB1D5B76CE0049DB20 /* FinalScene.sks in Resources */,
+				451578061D369529007BDEDC /* MainMenu.sks in Resources */,
+				4541DCC11D354182003C9421 /* GameScene.sks in Resources */,
+				452355391D36B081009EF8DF /* Actions.sks in Resources */,
+				4595D42A1D53E0DF00D9F1EE /* HammerHitting.sks in Resources */,
+				4541DCCD1D354183003C9421 /* LaunchScreen.storyboard in Resources */,
+				454044211D52F5A2002005CF /* TimePowerup10.sks in Resources */,
+				45FEA7DE1D3EA6D8004357F6 /* hillaryJump.sks in Resources */,
+				4541DCCA1D354183003C9421 /* Assets.xcassets in Resources */,
+				451578081D369598007BDEDC /* PickPres.sks in Resources */,
+				4541DCC81D354183003C9421 /* Main.storyboard in Resources */,
+				450AA65F1D5D3F67008E3F16 /* gameSceneMusic.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4541DCD11D354183003C9421 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4541DCDC1D354183003C9421 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4541DCB71D354180003C9421 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				452355641D36B812009EF8DF /* MSReferenceNode.swift in Sources */,
+				4541DCC31D354182003C9421 /* GameScene.swift in Sources */,
+				45C325371D46629A0001CDF3 /* PickPres.swift in Sources */,
+				452355481D36B5C3009EF8DF /* CGPoint+Extensions.swift in Sources */,
+				452355511D36B5C3009EF8DF /* SKTTimingFunctions.swift in Sources */,
+				452355501D36B5C3009EF8DF /* SKTEffects.swift in Sources */,
+				4523554C1D36B5C3009EF8DF /* SKAction+SpecialEffects.swift in Sources */,
+				45DB17FC1D51321E00386B61 /* HillaryScene.swift in Sources */,
+				452355491D36B5C3009EF8DF /* CGVector+Extensions.swift in Sources */,
+				45C325351D465DB40001CDF3 /* MainMenu.swift in Sources */,
+				4589267F1D5BF45700304543 /* OverSceneHillary.swift in Sources */,
+				4523554B1D36B5C3009EF8DF /* SKAction+Extensions.swift in Sources */,
+				4523554D1D36B5C3009EF8DF /* SKColor+Extensions.swift in Sources */,
+				45533DD91D5B76810049DB20 /* FinalScene.swift in Sources */,
+				4541DCC51D354182003C9421 /* GameViewController.swift in Sources */,
+				4523554A1D36B5C3009EF8DF /* Int+Extensions.swift in Sources */,
+				4523554E1D36B5C3009EF8DF /* SKNode+Extensions.swift in Sources */,
+				4523554F1D36B5C3009EF8DF /* SKTAudio.swift in Sources */,
+				452355471D36B5C3009EF8DF /* CGFloat+Extensions.swift in Sources */,
+				452355521D36B5C3009EF8DF /* Vector3.swift in Sources */,
+				4541DCBF1D354182003C9421 /* AppDelegate.swift in Sources */,
+				45E9F8501D4A7D3900CAA92A /* OverScene.swift in Sources */,
+				452355631D36B812009EF8DF /* MSButtonNode.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4541DCCF1D354183003C9421 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4541DCD81D354183003C9421 /* Wack_A_PresTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4541DCDA1D354183003C9421 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4541DCE31D354183003C9421 /* Wack_A_PresUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4541DCD51D354183003C9421 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4541DCBA1D354180003C9421 /* Wack-A-Pres */;
+			targetProxy = 4541DCD41D354183003C9421 /* PBXContainerItemProxy */;
+		};
+		4541DCE01D354183003C9421 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4541DCBA1D354180003C9421 /* Wack-A-Pres */;
+			targetProxy = 4541DCDF1D354183003C9421 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4541DCC61D354183003C9421 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4541DCC71D354183003C9421 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4541DCCB1D354183003C9421 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4541DCCC1D354183003C9421 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4541DCE51D354184003C9421 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4541DCE61D354184003C9421 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4541DCE81D354184003C9421 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Wack-A-Pres/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Shanta.Whac-A-Prez";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		4541DCE91D354184003C9421 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Wack-A-Pres/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Shanta.Whac-A-Prez";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		4541DCEB1D354184003C9421 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = "Wack-A-PresTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Shanta.makeschool.Wack-A-PresTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wack-A-Pres.app/Wack-A-Pres";
+			};
+			name = Debug;
+		};
+		4541DCEC1D354184003C9421 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Wack-A-PresTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Shanta.makeschool.Wack-A-PresTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wack-A-Pres.app/Wack-A-Pres";
+			};
+			name = Release;
+		};
+		4541DCEE1D354184003C9421 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = "Wack-A-PresUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Shanta.makeschool.Wack-A-PresUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Wack-A-Pres";
+			};
+			name = Debug;
+		};
+		4541DCEF1D354184003C9421 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Wack-A-PresUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Shanta.makeschool.Wack-A-PresUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Wack-A-Pres";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4541DCB61D35417F003C9421 /* Build configuration list for PBXProject "Wack-A-Pres" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4541DCE51D354184003C9421 /* Debug */,
+				4541DCE61D354184003C9421 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4541DCE71D354184003C9421 /* Build configuration list for PBXNativeTarget "Wack-A-Pres" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4541DCE81D354184003C9421 /* Debug */,
+				4541DCE91D354184003C9421 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4541DCEA1D354184003C9421 /* Build configuration list for PBXNativeTarget "Wack-A-PresTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4541DCEB1D354184003C9421 /* Debug */,
+				4541DCEC1D354184003C9421 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4541DCED1D354184003C9421 /* Build configuration list for PBXNativeTarget "Wack-A-PresUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4541DCEE1D354184003C9421 /* Debug */,
+				4541DCEF1D354184003C9421 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4541DCB31D35417F003C9421 /* Project object */;
+}
