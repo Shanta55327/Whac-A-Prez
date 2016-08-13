@@ -27,7 +27,6 @@
 		452355631D36B812009EF8DF /* MSButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452355541D36B812009EF8DF /* MSButtonNode.swift */; };
 		452355641D36B812009EF8DF /* MSReferenceNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452355551D36B812009EF8DF /* MSReferenceNode.swift */; };
 		45395D2B1D357AD000E079B1 /* trumpJump.sks in Resources */ = {isa = PBXBuildFile; fileRef = 45395D2A1D357AD000E079B1 /* trumpJump.sks */; };
-		453AC3AE1D5D9411001E5403 /* HelpScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 453AC3AD1D5D9411001E5403 /* HelpScene.sks */; };
 		454044211D52F5A2002005CF /* TimePowerup10.sks in Resources */ = {isa = PBXBuildFile; fileRef = 454044201D52F5A2002005CF /* TimePowerup10.sks */; };
 		4541DCBF1D354182003C9421 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4541DCBE1D354182003C9421 /* AppDelegate.swift */; };
 		4541DCC11D354182003C9421 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4541DCC01D354182003C9421 /* GameScene.sks */; };
@@ -40,11 +39,17 @@
 		4541DCE31D354183003C9421 /* Wack_A_PresUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4541DCE21D354183003C9421 /* Wack_A_PresUITests.swift */; };
 		45533DD91D5B76810049DB20 /* FinalScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45533DD81D5B76810049DB20 /* FinalScene.swift */; };
 		45533DDB1D5B76CE0049DB20 /* FinalScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 45533DDA1D5B76CE0049DB20 /* FinalScene.sks */; };
+		456651721D5EA17A005F6440 /* Presidential.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 456651711D5EA17A005F6440 /* Presidential.mp3 */; };
 		458084321D4A5C8C00579EF7 /* OverScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 458084311D4A5C8C00579EF7 /* OverScene.sks */; };
 		4584CFC61D4681C1000D639B /* HillaryScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4584CFC51D4681C1000D639B /* HillaryScene.sks */; };
 		4589267F1D5BF45700304543 /* OverSceneHillary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4589267E1D5BF45700304543 /* OverSceneHillary.swift */; };
 		458926811D5C0BB400304543 /* slap.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 458926801D5C0BB400304543 /* slap.mp3 */; };
 		4595D42A1D53E0DF00D9F1EE /* HammerHitting.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4595D4291D53E0DF00D9F1EE /* HammerHitting.sks */; };
+		45A2181C1D5E42EE00EEA95A /* FinalSceneHillary.sks in Resources */ = {isa = PBXBuildFile; fileRef = 45A2181B1D5E42EE00EEA95A /* FinalSceneHillary.sks */; };
+		45A2181E1D5E5CD400EEA95A /* FinalSceneHillary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A2181D1D5E5CD400EEA95A /* FinalSceneHillary.swift */; };
+		45A218201D5E674100EEA95A /* CreditsScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 45A2181F1D5E674100EEA95A /* CreditsScene.sks */; };
+		45B19EAD1D5E8A01006E07CE /* CreditsScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B19EAC1D5E8A01006E07CE /* CreditsScene.swift */; };
+		45B19EAF1D5E8EEF006E07CE /* Instructions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B19EAE1D5E8EEF006E07CE /* Instructions.swift */; };
 		45C325351D465DB40001CDF3 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C325341D465DB40001CDF3 /* MainMenu.swift */; };
 		45C325371D46629A0001CDF3 /* PickPres.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C325361D46629A0001CDF3 /* PickPres.swift */; };
 		45DB17FC1D51321E00386B61 /* HillaryScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DB17FB1D51321E00386B61 /* HillaryScene.swift */; };
@@ -92,7 +97,6 @@
 		452355541D36B812009EF8DF /* MSButtonNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSButtonNode.swift; sourceTree = "<group>"; };
 		452355551D36B812009EF8DF /* MSReferenceNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSReferenceNode.swift; sourceTree = "<group>"; };
 		45395D2A1D357AD000E079B1 /* trumpJump.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = trumpJump.sks; sourceTree = "<group>"; };
-		453AC3AD1D5D9411001E5403 /* HelpScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = HelpScene.sks; sourceTree = "<group>"; };
 		454044201D52F5A2002005CF /* TimePowerup10.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = TimePowerup10.sks; sourceTree = "<group>"; };
 		4541DCBB1D354180003C9421 /* Wack-A-Pres.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wack-A-Pres.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4541DCBE1D354182003C9421 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -111,11 +115,17 @@
 		4541DCE41D354183003C9421 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45533DD81D5B76810049DB20 /* FinalScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinalScene.swift; sourceTree = "<group>"; };
 		45533DDA1D5B76CE0049DB20 /* FinalScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = FinalScene.sks; sourceTree = "<group>"; };
+		456651711D5EA17A005F6440 /* Presidential.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Presidential.mp3; sourceTree = "<group>"; };
 		458084311D4A5C8C00579EF7 /* OverScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = OverScene.sks; sourceTree = "<group>"; };
 		4584CFC51D4681C1000D639B /* HillaryScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = HillaryScene.sks; sourceTree = "<group>"; };
 		4589267E1D5BF45700304543 /* OverSceneHillary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverSceneHillary.swift; sourceTree = "<group>"; };
 		458926801D5C0BB400304543 /* slap.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = slap.mp3; sourceTree = "<group>"; };
 		4595D4291D53E0DF00D9F1EE /* HammerHitting.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = HammerHitting.sks; sourceTree = "<group>"; };
+		45A2181B1D5E42EE00EEA95A /* FinalSceneHillary.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = FinalSceneHillary.sks; sourceTree = "<group>"; };
+		45A2181D1D5E5CD400EEA95A /* FinalSceneHillary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinalSceneHillary.swift; sourceTree = "<group>"; };
+		45A2181F1D5E674100EEA95A /* CreditsScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = CreditsScene.sks; sourceTree = "<group>"; };
+		45B19EAC1D5E8A01006E07CE /* CreditsScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditsScene.swift; sourceTree = "<group>"; };
+		45B19EAE1D5E8EEF006E07CE /* Instructions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Instructions.swift; path = ../Instructions.swift; sourceTree = "<group>"; };
 		45C325341D465DB40001CDF3 /* MainMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
 		45C325361D46629A0001CDF3 /* PickPres.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickPres.swift; sourceTree = "<group>"; };
 		45DB17FB1D51321E00386B61 /* HillaryScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HillaryScene.swift; path = ../HillaryScene.swift; sourceTree = "<group>"; };
@@ -207,27 +217,32 @@
 				4584CFC51D4681C1000D639B /* HillaryScene.sks */,
 				45FEA7DD1D3EA6D7004357F6 /* hillaryJump.sks */,
 				45395D2A1D357AD000E079B1 /* trumpJump.sks */,
-				4516CD6D1D56DDAA000E0607 /* Instructions.sks */,
 				45E590351D4FC12500B4529C /* obamaJump.sks */,
 				4595D4291D53E0DF00D9F1EE /* HammerHitting.sks */,
 				454044201D52F5A2002005CF /* TimePowerup10.sks */,
 				45DDE9711D5A623400256567 /* ReverseTimePowerup.sks */,
 				458084311D4A5C8C00579EF7 /* OverScene.sks */,
 				45533DDA1D5B76CE0049DB20 /* FinalScene.sks */,
+				45A2181B1D5E42EE00EEA95A /* FinalSceneHillary.sks */,
 				452355381D36B080009EF8DF /* Actions.sks */,
+				4516CD6D1D56DDAA000E0607 /* Instructions.sks */,
+				45A2181F1D5E674100EEA95A /* CreditsScene.sks */,
 				451578051D369529007BDEDC /* MainMenu.sks */,
 				451578071D369598007BDEDC /* PickPres.sks */,
-				453AC3AD1D5D9411001E5403 /* HelpScene.sks */,
 				45E9F84F1D4A7D3900CAA92A /* OverScene.swift */,
 				4589267E1D5BF45700304543 /* OverSceneHillary.swift */,
 				4541DCC21D354182003C9421 /* GameScene.swift */,
 				45DB17FB1D51321E00386B61 /* HillaryScene.swift */,
+				45A2181D1D5E5CD400EEA95A /* FinalSceneHillary.swift */,
 				45533DD81D5B76810049DB20 /* FinalScene.swift */,
+				45B19EAC1D5E8A01006E07CE /* CreditsScene.swift */,
+				45B19EAE1D5E8EEF006E07CE /* Instructions.swift */,
 				45C325361D46629A0001CDF3 /* PickPres.swift */,
 				45C325341D465DB40001CDF3 /* MainMenu.swift */,
 				4541DCC91D354183003C9421 /* Assets.xcassets */,
 				458926801D5C0BB400304543 /* slap.mp3 */,
 				450AA65E1D5D3F67008E3F16 /* gameSceneMusic.mp3 */,
+				456651711D5EA17A005F6440 /* Presidential.mp3 */,
 				4541DCC41D354182003C9421 /* GameViewController.swift */,
 				4541DCC61D354183003C9421 /* Main.storyboard */,
 				4541DCCB1D354183003C9421 /* LaunchScreen.storyboard */,
@@ -364,21 +379,23 @@
 				45E590361D4FC12500B4529C /* obamaJump.sks in Resources */,
 				45395D2B1D357AD000E079B1 /* trumpJump.sks in Resources */,
 				458926811D5C0BB400304543 /* slap.mp3 in Resources */,
-				453AC3AE1D5D9411001E5403 /* HelpScene.sks in Resources */,
 				45DDE9721D5A623400256567 /* ReverseTimePowerup.sks in Resources */,
 				458084321D4A5C8C00579EF7 /* OverScene.sks in Resources */,
 				4516CD6E1D56DDAA000E0607 /* Instructions.sks in Resources */,
 				4584CFC61D4681C1000D639B /* HillaryScene.sks in Resources */,
 				45533DDB1D5B76CE0049DB20 /* FinalScene.sks in Resources */,
+				45A218201D5E674100EEA95A /* CreditsScene.sks in Resources */,
 				451578061D369529007BDEDC /* MainMenu.sks in Resources */,
 				4541DCC11D354182003C9421 /* GameScene.sks in Resources */,
 				452355391D36B081009EF8DF /* Actions.sks in Resources */,
 				4595D42A1D53E0DF00D9F1EE /* HammerHitting.sks in Resources */,
 				4541DCCD1D354183003C9421 /* LaunchScreen.storyboard in Resources */,
 				454044211D52F5A2002005CF /* TimePowerup10.sks in Resources */,
+				456651721D5EA17A005F6440 /* Presidential.mp3 in Resources */,
 				45FEA7DE1D3EA6D8004357F6 /* hillaryJump.sks in Resources */,
 				4541DCCA1D354183003C9421 /* Assets.xcassets in Resources */,
 				451578081D369598007BDEDC /* PickPres.sks in Resources */,
+				45A2181C1D5E42EE00EEA95A /* FinalSceneHillary.sks in Resources */,
 				4541DCC81D354183003C9421 /* Main.storyboard in Resources */,
 				450AA65F1D5D3F67008E3F16 /* gameSceneMusic.mp3 in Resources */,
 			);
@@ -412,7 +429,9 @@
 				452355511D36B5C3009EF8DF /* SKTTimingFunctions.swift in Sources */,
 				452355501D36B5C3009EF8DF /* SKTEffects.swift in Sources */,
 				4523554C1D36B5C3009EF8DF /* SKAction+SpecialEffects.swift in Sources */,
+				45A2181E1D5E5CD400EEA95A /* FinalSceneHillary.swift in Sources */,
 				45DB17FC1D51321E00386B61 /* HillaryScene.swift in Sources */,
+				45B19EAD1D5E8A01006E07CE /* CreditsScene.swift in Sources */,
 				452355491D36B5C3009EF8DF /* CGVector+Extensions.swift in Sources */,
 				45C325351D465DB40001CDF3 /* MainMenu.swift in Sources */,
 				4589267F1D5BF45700304543 /* OverSceneHillary.swift in Sources */,
@@ -423,6 +442,7 @@
 				4523554A1D36B5C3009EF8DF /* Int+Extensions.swift in Sources */,
 				4523554E1D36B5C3009EF8DF /* SKNode+Extensions.swift in Sources */,
 				4523554F1D36B5C3009EF8DF /* SKTAudio.swift in Sources */,
+				45B19EAF1D5E8EEF006E07CE /* Instructions.swift in Sources */,
 				452355471D36B5C3009EF8DF /* CGFloat+Extensions.swift in Sources */,
 				452355521D36B5C3009EF8DF /* Vector3.swift in Sources */,
 				4541DCBF1D354182003C9421 /* AppDelegate.swift in Sources */,

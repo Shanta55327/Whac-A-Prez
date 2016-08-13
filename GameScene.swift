@@ -1,21 +1,22 @@
 //
-//  HillaryPodium.swift
+//  GameScene.swift
 //  Wack-A-Pres
 //
-//  Created by Shanta Adhikari on 7/25/16.
-//  Copyright © 2016 Make School. All rights reserved.
+//  Created by Shanta Adhikari on 7/12/16.
+//  Copyright (c) 2016 Make School. All rights reserved.
 //
 
 import SpriteKit
+import AVFoundation
 
 /* Tracking enum for game state */
-enum GamePlay {
+enum GameState {
     case Title, Playing, GameOver, Ready, Pause, Active
 }
 
-var finalGameScore:Int = 0
+var lastGameScore:Int = 0
 
-class HillaryScene: SKScene {
+class GameScene: SKScene {
     
     /* Game management */
     var state: GameState = .Ready
@@ -27,6 +28,7 @@ class HillaryScene: SKScene {
     var scoreLabel: SKLabelNode!
     var bestLabel: SKLabelNode!
     var pausedLabel: SKLabelNode!
+    var masterMallet: SKSpriteNode!
     var playButton: MSButtonNode!
     var pauseButton: MSButtonNode!
     var continueButton: MSButtonNode!
@@ -46,9 +48,9 @@ class HillaryScene: SKScene {
     var spawnObama = false
     var spawntimePower10 = false
     var spawnreverseTime = false
-    
+
     override func didMoveToView(view: SKView) {
-        
+
         scoreLabel = childNodeWithName("//scoreLabel") as! SKLabelNode
         
         timeLabel = childNodeWithName("//timeLabel") as! SKLabelNode
@@ -56,6 +58,10 @@ class HillaryScene: SKScene {
         pausedLabel = childNodeWithName("pausedLabel") as! SKLabelNode
         
         playButton = childNodeWithName("playButton") as! MSButtonNode
+        
+        masterMallet = childNodeWithName("masterMallet") as! SKSpriteNode
+        
+        masterMallet.hidden = false
         
         timePower10 = childNodeWithName("timePower10")!.children[0].childNodeWithName("timePower10")
         //spawning time powerup
@@ -101,6 +107,7 @@ class HillaryScene: SKScene {
             self.pausedLabel.hidden = true
             self.paused = false
             self.physicsWorld.speed = 1
+            self.removeAllActions()
             self.runAction(SKAction.playSoundFileNamed("gameSceneMusic", waitForCompletion: false))
         }
         
@@ -118,6 +125,7 @@ class HillaryScene: SKScene {
             self.state = .Pause
             self.paused = true
             self.physicsWorld.speed = 0
+            self.removeAllActions()
         }
         
         playButton.hidden = false
@@ -190,16 +198,16 @@ class HillaryScene: SKScene {
         
         for child in self.children {
             if child.name == "goldenBam" {
-                goldenBams.append(child)
-                child.hidden = true
-                
+            goldenBams.append(child)
+            child.hidden = true
+            
             }
         }
-        
+
     }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        /* Called when a touch begins */
+       /* Called when a touch begins */
         
         /* Game not ready to play */
         if state == .GameOver { return }
@@ -215,8 +223,11 @@ class HillaryScene: SKScene {
                 state == .Playing
                 
                 /* Increment Score */
-                score -= 10
+                score += 10
                 scoreLabel.text = String(score)
+                
+                node.removeAllActions()
+                node.runAction(SKAction(named: "DropDown")!, withKey: "DropDown")
                 
                 var index = 0
                 for t in trumps {
@@ -226,6 +237,7 @@ class HillaryScene: SKScene {
                     index += 1
                 }
                 
+                masterMallet.hidden = true
                 hammers[index].removeAllActions()
                 hammers[index].runAction(SKAction(named:"hammerHit")!, withKey: "hammerHit")
                 repBams[index].removeAllActions()
@@ -238,11 +250,8 @@ class HillaryScene: SKScene {
                 state == .Playing
                 
                 /* Increment Score */
-                score += 10
+                score -= 10
                 scoreLabel.text = String(score)
-                
-                node.removeAllActions()
-                node.runAction(SKAction(named: "DropDown")!, withKey: "DropDown")
                 
                 var index = 0
                 for h in hillarys {
@@ -252,6 +261,7 @@ class HillaryScene: SKScene {
                     index += 1
                 }
                 
+                masterMallet.hidden = true
                 hammers[index].removeAllActions()
                 hammers[index].runAction(SKAction(named:"hammerHit")!, withKey: "hammerHit")
                 demBams[index].removeAllActions()
@@ -290,7 +300,7 @@ class HillaryScene: SKScene {
                     SKAction.speedTo(0.5, duration: 0.5),
                     SKAction.waitForDuration(5),
                     SKAction.speedTo(1.0, duration: 0.5)
-                    ]))
+                ]))
             }
             
             if node.name == "pauseButton" {
@@ -298,14 +308,14 @@ class HillaryScene: SKScene {
             }
             
         }
-        
-    }
-    
-    override func update(currentTime: CFTimeInterval) {
 
+    }
+   
+    override func update(currentTime: CFTimeInterval) {
+        
         /* Called before each frame is rendered */
         if state != .Playing { return }
-        
+
         mainTimer += CFTimeInterval(self.speed) * (1.0 / 60.0)
         let countDownInt:Int = 35 - Int(mainTimer)
         if countDownInt > 0 {
@@ -325,31 +335,36 @@ class HillaryScene: SKScene {
             spawnInterval = 0.40
         }
         
+        
+        //timer for update where after a certain amount of time, trump is updated and pops up
         if spawnTimerTrumpHillary >= spawnInterval {
+
+            let trumpIndex = random() % trumps.count
+            let trump = trumps[trumpIndex]
+            let hillary = hillarys[trumpIndex]
             
-            let hillaryIndex = random() % hillarys.count
-            let hillary = hillarys[hillaryIndex]
-            let trump = trumps[hillaryIndex]
-            
-            if trump.actionForKey("jump") == nil {
-                hillary!.runAction(SKAction(named: "jump")!, withKey: "jump")
+            if hillary.actionForKey("jump") == nil {
+                trump!.runAction(SKAction(named: "jump")!, withKey: "jump")
             }
             
+            // Reset spawn timer
             spawnTimerTrumpHillary = 0
-            let trumpIndex = random() % trumps.count
             
-            if trumpIndex != hillaryIndex {
-                let trump = trumps[trumpIndex]
-                let hillary = hillarys[trumpIndex]
-                if hillary.actionForKey("jump") == nil {
-                    trump!.runAction(SKAction(named: "jump")!, withKey: "jump")
+            let hillaryIndex = random() % hillarys.count
+            
+            if hillaryIndex != trumpIndex {
+                let hillary = hillarys[hillaryIndex]
+                let trump = trumps[hillaryIndex]
+                if trump.actionForKey("jump") == nil {
+                    hillary!.runAction(SKAction(named:"jump")!, withKey: "jump")
+                    
                 }
             }
         }
-        
+
         //game ends when game is over
         if countDownInt <= 0 {
-            gameOver()
+            finalScene()
         }
         
         var defaults = NSUserDefaults.standardUserDefaults()
@@ -359,30 +374,29 @@ class HillaryScene: SKScene {
         if score > oldHighScore {
             defaults.setObject(String(score), forKey : "High_Score") // Saving the String to NSUserDefaults
         }
-        
+
     }
     
-    func gameOver() {
+    func finalScene() {
         /* Game over! */
         
         state = .GameOver
         
         playButton.hidden = false
         
-        finalGameScore = score
-        
+        lastGameScore = score
+            
         /* Grab reference to the SpriteKit view */
         let skView = self.view as SKView!
-        
+            
         /* Load Game scene */
-        let scene = FinalSceneHillary(fileNamed:"FinalSceneHillary") as FinalSceneHillary!
-        
+        let scene = FinalScene(fileNamed:"FinalScene") as FinalScene!
+            
         /* Ensure correct aspect mode */
         scene.scaleMode = .AspectFill
-        
+            
         /* Restart GameScene */
         skView.presentScene(scene)
-        
+
     }
 }
-
